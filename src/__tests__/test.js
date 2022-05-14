@@ -2,7 +2,7 @@ import GameSavingLoader from '../js/GameSavingLoader';
 
 jest.setTimeout(10000);
 
-test('should sum', async (done) => {
+test('should sum', async () => {
   const result = await GameSavingLoader.load();
   expect(result).toEqual({
     id: 9,
@@ -14,5 +14,4 @@ test('should sum', async (done) => {
       points: 2000,
     },
   });
-  done();
 });
